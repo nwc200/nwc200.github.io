@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /> 
+        <title>Visualizing best HDB resale investment</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">IS428 G1T9</a>
+            
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-house"></i></div>
+                                Homepage
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-bar"></i></div>
+                                Visualizations
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="problemanalysis.html">Problem Analysis</a>
+                                    <a class="nav-link" href="factoranalysis.html">Factor Analysis</a>
+                                    <a class="nav-link" href="regression.html">Predicting Price (Regression)</a>
+                                    <a class="nav-link" href="arima.html">Predicting Price (ARIMA)</a>
+                                    <a class="nav-link" href="map.html">Map</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link" href="aboutus.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
+                                About Us
+                            </a>
+                            
+                        </div>
+                    </div>
+                    
+                </nav>
+            </div>
+
+
+
+
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Homepage</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Visualizing the best resale flat for investment 
+                            </li>
+                        </ol>
+                        <div class="row">
+                            <div class = "col-sm">
+                                <h2>Problem</h2>
+                                <img src="https://media.homeanddecor.com.sg/public/2013/12/149479167.jpg" style="float:right; margin-left:50px;margin-bottom: 20px;" width="431.5px" height="370px">
+                                <p align="justify">
+                                    HDB resale flats continued their skyward trajectory in January 2022 for the 19th straight month across all flat types as well as mature and non-mature estates.   
+                                    Despite the introduction of cooling measures in 2021, namely the tightening of debt servicing ratio for borrowers and House Board loans lowered from 90 percent to 85 percent of the property purchase price, HDB resale prices continued to surge upwards, making this the biggest rise since 2010 and economists reckon this phenomenon is due to basic demand and supply.   
+                                    Additionally, the impact of Covid-19 on the construction sector has caused the average estimated completion date for Built-to-Order (BTO) flats to be pushed back 6 to 9 months. Prospective homeowners have instead turned their attention to HDB resale flats as an alternative, resulting in its demand and price to soar continuously.
+                                </p>
+                                <h2>Motivation</h2>
+                                <p align="justify">
+                                    Buying a resale flat is a major commitment that requires extensive preliminary research and careful financial planning. To get the best deals, buyers can consult agents by providing them with what they are looking for in a flat(whether it be amenities near the house or their budget). Hence, we want to help property agents match the needs of their clients with visualizations that are easily digestible and dynamic. 
+                                </p>
+                                <h2>Data</h2>
+                                <p align="justify">
+                                Our data consists of the HDB Resale Flat Price dataset that was retrieved from data.gov.sg. This contains the town, full address, purchase price, etc.
+                                The list of amenities were obtained from wikipedia. The amenities latitude and longitude were geocoded using google geocoding api. The distance was then calculated using a python library called geopy.
+                                <br>
+                                List of amenities: 
+                                </p>
+                                <ol>
+                                    <li>
+                                        Hospitals
+                                    </li>
+                                    <li>
+                                        Hawker Centres
+                                    </li>
+                                    <li>
+                                        MRTs
+                                    </li>
+                                    <li>
+                                        Parks
+                                    </li>
+                                    <li>
+                                        Clinics
+                                    </li>
+                                    <li>
+                                        Shopping Malls
+                                    </li>
+                                    <li>
+                                        Market
+                                    </li>
+                                    <li>
+                                        Schools
+                                    </li>
+                                </ol>
+                            
+                            </div>
+                        </div>
+
+                        
+                        
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>
