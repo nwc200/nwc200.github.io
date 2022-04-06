@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="author" content="" /> 
         <title>Visualizing best HDB resale investment</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
@@ -58,18 +58,14 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Map</h1>
+                        <h1 class="mt-4">Predicting Price - ARIMA Model</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Interactive map 
+                            <li class="breadcrumb-item active">Predicting future trends with ARIMA 
                             </li>
                         </ol>
                         <div class="row">
                             <div class = "col-sm">
-                                <h2>HDB resold flats</h2>
-                                <p>Layers can be found on the top right corner. This was done to increase the data ink ratio. The higher the score, the closer it is to the amenity. Hence, a large area of the star plot is desired.</p>
-                                <p>Scoring: The score of the star plot is calculated by taking 5km and deducting the actual distance from the amenity. For example, a polyclinic within 1km of the HDB is rated as a 4 on the star plot.  
-                                    Amenities with a distance of 5km or further  from the house is rated a 0.</p>
-                                <iframe src="sgmap.html" width="900px" height="500px"></iframe> <div class='tableauPlaceholder' id='viz1649276246361' style='position: relative'><noscript><a href='#'><img alt='Radial Chart  ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ra&#47;radial_16492759978490&#47;RadialChart&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='radial_16492759978490&#47;RadialChart' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ra&#47;radial_16492759978490&#47;RadialChart&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1649276246361');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='500px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='500';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                <iframe src="arima_prediction.html" width="1000px" height="800px"></iframe>
                             
                             </div>
                         </div>
